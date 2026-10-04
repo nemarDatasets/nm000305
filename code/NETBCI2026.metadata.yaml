@@ -1,0 +1,117 @@
+_dataset:
+  class: NETBCI2026
+  code: NETBCI2026
+  doi: 10.1038/s41597-026-08237-5
+  interval:
+  - 0
+  - 5
+  n_subjects: 19
+  paradigm: imagery
+acquisition:
+  cap_manufacturer: Easycap
+  channel_types:
+    eeg: 74
+  electrode_material: Ag/AgCl
+  electrode_type: passive
+  ground: left scapula
+  hardware: Easycap 74-channel passive Ag/AgCl EEG amplified by the MEGIN TRIUX MEG acquisition system (102 magnetometers,
+    204 gradiometers)
+  impedance_threshold_kohm: 20.0
+  line_freq: 50.0
+  montage: standard_1005
+  reference: mastoids
+  sampling_rate: 250.0
+  software: BCI2000
+bci_application:
+  applications:
+  - motor_control
+  - neurofeedback
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: cross-session
+  evaluation_type:
+  - within_subject
+  - cross_session
+data_structure:
+  n_trials: 14431
+  n_trials_per_class:
+    rest: 7207
+    right_hand: 7224
+  trials_context: '6 online feedback runs per session x 4 sessions; the protocol has 32 trials per run (16 per class); the
+    released events hold the authors'' checked trials: 375/456 runs keep 32, the rest 29-31 (357-384 trials per class per
+    subject, 14,431 in total).'
+documentation:
+  country: FR
+  data_url: https://doi.org/10.57745/RBJRC7
+  doi: 10.1038/s41597-026-08237-5
+  ethics_approval:
+  - CPP-IDF-VI of Paris, 2016-A00626-45
+  institution: Paris Brain Institute (ICM)
+  investigators:
+  - Marie-Constance Corsi
+  - Christophe Gitton
+  - Juliana Gonzalez-Astudillo
+  - Ari E. Kahn
+  - Laurent Hugueville
+  - Denis Schwartz
+  - Nathalie George
+  - Mario Chavez
+  - Sophie Dupont
+  - Danielle S. Bassett
+  - Fabrizio De Vico Fallani
+  license: CC-BY-4.0
+  publication_year: 2026
+  related_paper_dois:
+  - 10.1142/S0129065718500144
+  repository: Recherche Data Gouv
+  senior_author: Fabrizio De Vico Fallani
+experiment:
+  class_labels:
+  - right_hand
+  - rest
+  events:
+    rest: 2
+    right_hand: 1
+  feedback_type: visual cursor
+  mode: online
+  n_classes: 2
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: visual target
+  study_design: 'Longitudinal BCI training: 4 sessions on 4 days. One-dimensional two-target box task; up target = sustained
+    right-hand grasping motor imagery, down target = rest. Trial: 1 s ISI then 5 s target presentation with cursor feedback
+    from 3 to 6 s. 6 feedback runs per session, 32 trials per run in the protocol.'
+  synchronicity: synchronous
+  trial_duration: 6.0
+file_format: BrainVision (BIDS)
+paradigm_specific:
+  cue_duration_s: 5.0
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 5.0
+  imagery_tasks:
+  - right_hand
+  - rest
+participants:
+  age_max: 35.0
+  age_mean: 27.47
+  age_min: 19.0
+  age_std: 4.07
+  gender:
+    female: 7
+    male: 12
+  handedness: right-handed
+  health_status: healthy
+  n_subjects: 19
+  species: human
+runs_per_session: 6
+sessions_per_subject: 4
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Motor Imagery
