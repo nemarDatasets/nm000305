@@ -1,0 +1,98 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Marie-Constance Corsi": {
+      "orcid": "0000-0002-6262-5036"
+    },
+    "Christophe Gitton": {},
+    "Juliana Gonzalez-Astudillo": {},
+    "Ari E. Kahn": {},
+    "Laurent Hugueville": {},
+    "Denis Schwartz": {
+      "orcid": "0000-0002-8557-2934"
+    },
+    "Nathalie George": {},
+    "Mario Chavez": {},
+    "Sophie Dupont": {},
+    "Danielle S. Bassett": {
+      "orcid": "0000-0002-6183-4493"
+    },
+    "Fabrizio De Vico Fallani": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1038/s41597-026-08237-5",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.57745/RBJRC7",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000305",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000305",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "title": "NETBCI2026",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "3.52 GB (445 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".tsv",
+    ".yaml"
+  ],
+  "description": "A longitudinal EEG dataset of right-hand motor imagery versus rest brain-computer interface (BCI) training in 19 healthy participants, each completing 4 sessions on separate days. Participants controlled a one-dimensional cursor in a two-target box task with online visual feedback, yielding 14,431 trials recorded with a 74-channel EEG system. The dataset is distributed in BIDS format with HED event annotations and supports studies of BCI skill learning and neurofeedback.",
+  "methods_description": "EEG was recorded at 250 Hz from 74 passive Ag/AgCl Easycap electrodes, amplified by a MEGIN TRIUX system, referenced to the mastoids with the ground on the left scapula, and acquired with BCI2000. Each session had 6 online feedback runs of up to 32 trials. Each trial had a 1 s inter-stimulus interval followed by 5 s of target presentation with cursor feedback. The up target corresponded to sustained right-hand grasping motor imagery and the down target to rest.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "neurofeedback"
+    },
+    {
+      "term": "longitudinal training"
+    },
+    {
+      "term": "Brain-Computer Interfaces"
+    },
+    {
+      "term": "Electroencephalography"
+    }
+  ],
+  "source_hash": "bb95d0c23cf3afaa0243a37dc68535458417305c9797e1691d31a119907f0d6c"
+}
