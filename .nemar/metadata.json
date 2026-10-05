@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "NETBCI2026: NETBCI: longitudinal right-hand motor imagery vs rest BCI training",
+  "description": "A longitudinal EEG dataset of right-hand motor imagery versus rest brain-computer interface (BCI) training. 19 healthy right-handed participants completed 4 sessions on separate days, each with 6 online feedback runs. Participants controlled a one-dimensional cursor in a two-target box task, with visual feedback. The dataset contains 74-channel EEG recorded alongside MEG and comprises 14,431 labelled trials. It supports studies of learning and neurofeedback in BCI training.",
+  "methods_description": "EEG was recorded with a 74-channel Easycap passive Ag/AgCl cap, amplified by a MEGIN TRIUX system, at 250 Hz. The reference was the mastoids and the ground the left scapula. Stimulus presentation and online feedback were run in BCI2000. Each trial had a 1 s inter-stimulus interval followed by 5 s of target presentation, with cursor feedback from 3 to 6 s. The up target was sustained right-hand grasping motor imagery and the down target was rest. Each run had 32 trials in the protocol.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Marie-Constance Corsi": {
       "orcid": "0000-0002-6262-5036"
@@ -20,6 +25,32 @@
     },
     "Fabrizio De Vico Fallani": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Neurofeedback",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D058765"
+    },
+    {
+      "term": "longitudinal training"
+    },
+    {
+      "term": "MEG"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41597-026-08237-5",
@@ -52,14 +83,11 @@
       "relation_type": "References"
     }
   ],
-  "title": "NETBCI2026",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "3.52 GB (445 files)"
   ],
@@ -67,32 +95,8 @@
     ".edf",
     ".json",
     ".tsv",
-    ".yaml"
+    ".yaml",
+    ".yml"
   ],
-  "description": "A longitudinal EEG dataset of right-hand motor imagery versus rest brain-computer interface (BCI) training in 19 healthy participants, each completing 4 sessions on separate days. Participants controlled a one-dimensional cursor in a two-target box task with online visual feedback, yielding 14,431 trials recorded with a 74-channel EEG system. The dataset is distributed in BIDS format with HED event annotations and supports studies of BCI skill learning and neurofeedback.",
-  "methods_description": "EEG was recorded at 250 Hz from 74 passive Ag/AgCl Easycap electrodes, amplified by a MEGIN TRIUX system, referenced to the mastoids with the ground on the left scapula, and acquired with BCI2000. Each session had 6 online feedback runs of up to 32 trials. Each trial had a 1 s inter-stimulus interval followed by 5 s of target presentation with cursor feedback. The up target corresponded to sustained right-hand grasping motor imagery and the down target to rest.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "neurofeedback"
-    },
-    {
-      "term": "longitudinal training"
-    },
-    {
-      "term": "Brain-Computer Interfaces"
-    },
-    {
-      "term": "Electroencephalography"
-    }
-  ],
-  "source_hash": "bb95d0c23cf3afaa0243a37dc68535458417305c9797e1691d31a119907f0d6c"
+  "source_hash": "c303bb66d511785ef7c917d877a198e2c6e62f27ee7242f7208f45b82c3e0708"
 }
