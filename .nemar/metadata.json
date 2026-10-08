@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "NETBCI2026: NETBCI: longitudinal right-hand motor imagery vs rest BCI training",
-  "description": "A longitudinal EEG dataset of right-hand motor imagery versus rest brain-computer interface (BCI) training. 19 healthy right-handed participants completed 4 sessions on separate days, each with 6 online feedback runs. Participants controlled a one-dimensional cursor in a two-target box task, with visual feedback. The dataset contains 74-channel EEG recorded alongside MEG and comprises 14,431 labelled trials. It supports studies of learning and neurofeedback in BCI training.",
-  "methods_description": "EEG was recorded with a 74-channel Easycap passive Ag/AgCl cap, amplified by a MEGIN TRIUX system, at 250 Hz. The reference was the mastoids and the ground the left scapula. Stimulus presentation and online feedback were run in BCI2000. Each trial had a 1 s inter-stimulus interval followed by 5 s of target presentation, with cursor feedback from 3 to 6 s. The up target was sustained right-hand grasping motor imagery and the down target was rest. Each run had 32 trials in the protocol.",
+  "description": "A longitudinal EEG dataset of 19 healthy right-handed participants trained over four sessions on separate days to control a brain-computer interface. Participants used sustained right-hand grasping motor imagery versus rest to move a cursor on a one-dimensional two-target task with online visual feedback. Each session comprised six feedback runs, giving 14,431 trials in total. The recordings were made with a 74-channel EEG system alongside MEG and are organized in BIDS format.",
+  "methods_description": "EEG was recorded at 250 Hz from 74 passive Ag/AgCl Easycap electrodes, referenced to the mastoids, simultaneously with a MEGIN TRIUX MEG system, and BCI2000 was used for acquisition and feedback. Each trial had a 1 s inter-stimulus interval followed by a 5 s target presentation, with cursor feedback from 3 to 6 s. Participants performed right-hand motor imagery for the up target and rested for the down target, with 6 runs of up to 32 trials per session.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -30,18 +30,16 @@
       "term": "EEG"
     },
     {
-      "term": "motor imagery"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Motor Imagery"
     },
     {
       "term": "Neurofeedback",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D058765"
     },
     {
@@ -89,14 +87,16 @@
     "eeg"
   ],
   "sizes": [
-    "3.52 GB (445 files)"
+    "3.53 GB (902 files)"
   ],
   "formats": [
     ".edf",
     ".json",
+    ".md",
     ".tsv",
+    ".vhdr",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "c303bb66d511785ef7c917d877a198e2c6e62f27ee7242f7208f45b82c3e0708"
+  "source_hash": "bf4124d3478e7b59ed74747c8ffd0a745441cdaf8a31895d68ca81e74851a50c"
 }
