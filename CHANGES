@@ -1,0 +1,9 @@
+1.0.1 2026-10-16
+  - sourcedata: added the 2,891 files (8,074,878,917 bytes) that sat next to the 456 deposited
+    .vhdr headers in the upstream release but were missing here: for each of the 456 EEG
+    motor-imagery runs the _eeg.eeg, _eeg.vmrk, _eeg.json, _channels.tsv, _events.tsv and
+    _events.json; for each of the 76 sessions the space-CapTrak _electrodes.tsv and _coordsystem.json;
+    and the root dataset_description.json, participants.tsv and participants.json. All are unchanged
+    from the Recherche Data Gouv release doi:10.57745/RBJRC7 (Archive.zip members, CRC-32 checked;
+    root files md5-checked). moabb.datasets.NETBCI2026 needs them to load a subject from this
+    deposit's sourcedata/. No existing file changed; the BIDS tree is unchanged.
