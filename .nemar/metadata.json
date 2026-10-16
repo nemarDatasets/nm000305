@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "NETBCI2026: NETBCI: longitudinal right-hand motor imagery vs rest BCI training",
-  "description": "A longitudinal EEG dataset of 19 healthy right-handed participants trained over four sessions on separate days to control a brain-computer interface. Participants used sustained right-hand grasping motor imagery versus rest to move a cursor on a one-dimensional two-target task with online visual feedback. Each session comprised six feedback runs, giving 14,431 trials in total. The recordings were made with a 74-channel EEG system alongside MEG and are organized in BIDS format.",
-  "methods_description": "EEG was recorded at 250 Hz from 74 passive Ag/AgCl Easycap electrodes, referenced to the mastoids, simultaneously with a MEGIN TRIUX MEG system, and BCI2000 was used for acquisition and feedback. Each trial had a 1 s inter-stimulus interval followed by a 5 s target presentation, with cursor feedback from 3 to 6 s. Participants performed right-hand motor imagery for the up target and rested for the down target, with 6 runs of up to 32 trials per session.",
+  "description": "A longitudinal EEG dataset of right-hand motor imagery versus rest during brain-computer interface (BCI) training. Nineteen healthy participants completed four sessions on four separate days, with six online feedback runs per session. Each trial used a one-dimensional two-target cursor task, with visual feedback driven by sustained right-hand grasping imagery or rest. The data were recorded with a 74-channel EEG system and are distributed in BIDS format with HED annotations.",
+  "methods_description": "EEG was recorded at 250 Hz with a 74-channel Easycap passive Ag/AgCl cap, amplified by a MEGIN TRIUX system and referenced to the mastoids. Stimulus presentation and online feedback were run with BCI2000. Each trial had a 1 s inter-stimulus interval followed by a 5 s target presentation, with cursor feedback from 3 to 6 s. The protocol specified 32 trials per run.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -35,18 +35,18 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Motor Imagery"
+      "term": "motor imagery"
     },
     {
-      "term": "Neurofeedback",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D058765"
+      "term": "neurofeedback"
     },
     {
       "term": "longitudinal training"
     },
     {
-      "term": "MEG"
+      "term": "Imagination",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D007092"
     }
   ],
   "related_identifiers": [
@@ -87,16 +87,18 @@
     "eeg"
   ],
   "sizes": [
-    "3.53 GB (902 files)"
+    "10.32 GB (1766 files)"
   ],
   "formats": [
     ".edf",
+    ".eeg",
     ".json",
     ".md",
     ".tsv",
     ".vhdr",
+    ".vmrk",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "bf4124d3478e7b59ed74747c8ffd0a745441cdaf8a31895d68ca81e74851a50c"
+  "source_hash": "82006735612f54b5fddea9df5f08e7f819eb72950209f9a972a8876e2f9365d2"
 }
